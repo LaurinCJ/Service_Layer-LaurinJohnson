@@ -1,0 +1,26 @@
+# Visual Studio and .NET output
+.vs/
+.idea/
+**/bin/
+**/obj/
+*.user
+*.suo
+TestResults/
+*.nupkg
+*.snupkg
+# Local databases, secrets, and Azure publishing credentials
+*.mdf
+*.ldf
+*.bak
+**/local.settings.json
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+**/Properties/PublishProfiles/
+.azure/
+__azurite_db*__.json
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+# OS files
+.DS_Store
+Thumbs.db

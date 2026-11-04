@@ -1,0 +1,33 @@
+PROJECT 5 WORK TO COMPLETE
+
+Project 5 foundation: separate Data and Business class libraries, API project,
+and Console client. Database scripts are included in this repo too.
+The business managers, controllers, and service models are placeholders.
+The console client is implemented, but CRUD calls return 404 until YOU
+implement the service/business layers described in LAYER_PLAN.txt.
+
+RUN THE API
+  dotnet run --project src/GameLibrary.Api --launch-profile GameLibrary.Api
+Startup check: http://localhost:5105/
+Set GameLibrary.Api as the Visual Studio startup project if using F5.
+Startup check only proves the host started, not the database connection.
+
+RUN THE CLIENT IN A SECOND TERMINAL (keep the API running)
+  dotnet run --project src/GameLibrary.Client -- http://localhost:5105/
+Select list or single-record lookup for all three tables.
+Choose an actual ID from a list response before testing a single lookup.
+A missing endpoint message is expected while controllers are still empty.
+
+[ ] Write all three managers and implement friendly Save methods.
+[ ] Define service models and write all three controllers' CRUD methods.
+[ ] Verify list + single GETs from the console client for all three tables.
+[ ] Verify POST insert, POST update, and DELETE for each table (e.g. .http file).
+[ ] Confirm a missing ID returns 404 and invalid input returns a useful error.
+[ ] Take a screenshot of the running API, plus the client fetching records.
+[ ] Write PDF/DOCX with screenshots, challenge, learned technique, refinements.
+[ ] Push code/SQL to GitHub; submit repo URL and PDF/DOCX as instructed.
+
+docs/ApiRequests.http is a manual HTTP request scratchpad. It is not an
+automated test and the placeholder IDs must be replaced with real IDs.
+Repository methods are complete; business and controller behavior is yours.
+Do not submit these starter placeholders as a finished assignment.
